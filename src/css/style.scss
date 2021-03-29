@@ -1,0 +1,169 @@
+/********************
+ * VARIABLES
+ ********************/
+$primaryColor: #786AFF;
+$whiteColor: #FFF;
+
+@mixin fontSize($fontSize) {
+    font-family: $fontSize;
+}
+
+/********************
+ * GENERAL STYLES
+ ********************/
+.mainBackground {
+    background-color: $whiteColor;
+}
+
+.greyBackground,
+body {
+    background-color: #F5F6F7;
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    html {
+        overflow: hidden;
+    }
+}
+
+
+label {
+    font-weight: 500;
+}
+
+
+.colorGrey {
+    color: #8A8F9C;
+}
+
+.colorGreen {
+    color: #42B72A;
+}
+
+.colorMain {
+    color: $primaryColor;
+}
+
+.colorBlack {
+    color: black;
+}
+
+.colorWhite {
+    color: $whiteColor;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .footer {
+        position: unset;
+    }
+}
+
+/********************
+ * LOGIN AND SIGN UP STYLES
+ ********************/
+
+.mainButton {
+    background-color: $primaryColor;
+    color: $whiteColor;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.briefSection {
+    background-color: $whiteColor;
+    border-bottom: 1px solid #F5F6F7;
+}
+
+.inputSection {
+    background-color: #F5F6F7;
+}
+
+.inputForm {
+    border: unset;
+    height: 45px;
+}
+
+.forgotPasswordText {
+    @include fontSize(14px)
+}
+
+.dontHaveAccountText {
+    @include fontSize(15px)
+}
+
+.anchorLink {
+    position: relative;
+    bottom: 2px;
+}
+
+.sideBackground {
+    width: 100%;
+}
+
+/********************
+ * BOOKING STYLES
+ ********************/
+
+.textMenu {
+    font-weight: 500;
+}
+
+.imageBgPosition {
+    width: 80px;
+    height: 80px;
+}
+
+.initNamePosition {
+    position: absolute;
+    top: 25px;
+    left: 43px;
+    font-size: 15px;
+    color: white;
+}
+
+.userName {
+    font-weight: 500;
+}
+
+.subscriptionStatus {
+    color: grey;
+    font-size: 15px;
+}
+
+.materialIconAlign {
+    position: relative;
+    top: 7px;
+}
+
+.mainClickMenu {
+    background-color: $primaryColor;
+    color: $whiteColor;
+    font-weight: 700;
+    line-height: 35px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.roomImage {
+    width: 100%;
+}
+
+.roomDetail {
+    box-shadow: 2px 2px 5px lightgrey;
+}
+
+.eventDetail {
+    margin-left: 2rem;
+}
